@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2025-12-01T22:10:33.280Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="xMCYXHDYa3zhz9N-z4yP" version="22.1.2" type="device">
+<mxfile host="Electron" modified="2025-12-01T22:18:09.940Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="UZPgV6fjIVFL7V_GtSPN" version="22.1.2" type="device">
   <diagram name="Seite-1" id="cD8_10iT1XRpbPlrr60v">
     <mxGraphModel dx="1436" dy="1056" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -18,7 +18,7 @@
             <mxPoint x="10" as="offset" />
           </mxGeometry>
         </mxCell>
-        <UserObject label="Gespeicherte" link="docs\gespeicherte.html" id="aQ0sNsDWXc5Z1DA3wb6D-5">
+        <UserObject label="Gespeicherte" link="C:\Users\elena\Dropbox\Testi\docs\gespeicherte.html" id="aQ0sNsDWXc5Z1DA3wb6D-5">
           <mxCell style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.rrect;rSize=0;fontSize=17;fontColor=#666666;strokeColor=inherit;fillColor=inherit;gradientColor=none;" parent="aQ0sNsDWXc5Z1DA3wb6D-3" vertex="1">
             <mxGeometry width="113" height="25" relative="1" as="geometry">
               <mxPoint x="125" as="offset" />
