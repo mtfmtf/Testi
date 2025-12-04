@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2025-12-01T22:04:07.845Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="mS0Dikm4H4IbV578A3yj" version="22.1.2" type="device">
+<mxfile host="Electron" modified="2025-12-02T09:23:08.672Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="M5EhJI2JH9jfGYChIhVQ" version="22.1.2" type="device">
   <diagram name="Seite-1" id="cD8_10iT1XRpbPlrr60v">
-    <mxGraphModel dx="1436" dy="1056" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1832" dy="1239" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -13,7 +13,7 @@
         <mxCell id="aQ0sNsDWXc5Z1DA3wb6D-3" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.marginRect2;rectMarginTop=32;strokeColor=#666666;gradientColor=none;whiteSpace=wrap;fontSize=16;opacity=70;" parent="1" vertex="1">
           <mxGeometry x="-154" y="-7" width="582" height="438" as="geometry" />
         </mxCell>
-        <UserObject label="Allgemein" link="C:\Users\elena\Dropbox\Testi\docs\allgemein.html" id="aQ0sNsDWXc5Z1DA3wb6D-4">
+        <UserObject label="Allgemein" link="allgemein.html" id="aQ0sNsDWXc5Z1DA3wb6D-4">
           <mxCell style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.rrect;rSize=0;fontSize=17;fontColor=#666666;gradientColor=none;" parent="aQ0sNsDWXc5Z1DA3wb6D-3" vertex="1">
             <mxGeometry width="102" height="25" relative="1" as="geometry">
               <mxPoint x="10" as="offset" />
