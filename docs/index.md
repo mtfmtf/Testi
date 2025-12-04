@@ -1,4 +1,6 @@
+---
 titel: Index
+---
 
 {% include nav.html %}
 

@@ -1,4 +1,6 @@
-titel: Seite 2
+---
+titel: seite2
+---
 
 {% include nav.html %}
 
