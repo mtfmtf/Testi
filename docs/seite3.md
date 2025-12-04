@@ -1,5 +1,4 @@
 ---
-titel: Seite 3
 ---
 
 {% include nav.html %}

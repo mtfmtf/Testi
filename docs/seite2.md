@@ -1,5 +1,4 @@
 ---
-titel: seite20
 ---
 
 {% include nav.html %}
