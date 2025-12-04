@@ -1,3 +1,8 @@
+titel: Seite 2
+
+{% include nav.html %}
+
+
 # seite 2
 
 leider noch keine PDF oder sonstiges

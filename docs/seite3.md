@@ -1,3 +1,9 @@
+titel: Seite 3
+
+{% include nav.html %}
+
+
+
 die Größe des Delta nach dem Commiten anhand von
 
 <pre>git show --stat
