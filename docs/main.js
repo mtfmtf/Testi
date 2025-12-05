@@ -6,7 +6,7 @@ document.getElementById('login-form').addEventListener('submit', function(e){
 
     // Einfacher Check
     if(user === "admin" && pass === "1234"){
-        window.location.href = "index.html";
+        window.location.href = "home.html";
     } else {
         alert("Benutzername oder Passwort falsch!");
     }
