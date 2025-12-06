@@ -4,13 +4,14 @@ from datetime import datetime
 
 #DIRECTORY=f'..{os.sep}docs{os.sep}'
 DIRECTORY=f'cfp{os.sep}'
+HEADER='---\n---\n{% include nav.html %}'
 
 def print_to_file(filename):
   sys.stdout.flush()
   modus = 'a' if os.path.exists(f'{DIRECTORY}{filename}') else 'wt'
   print(f'Modus:{modus}')
   sys.stdout=open(f'{DIRECTORY}{filename}',f'{modus}')
-  if modus != 'a' : print('---\n---\n')
+  if modus != 'a' : print(f'{HEADER}')
 
 def restore_print():
   sys.stdout.close()
