@@ -1,0 +1,7 @@
+services:
+  cfp:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ../docs:/app/cfp
