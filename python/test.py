@@ -6,6 +6,7 @@ from datetime import datetime
 file tree in docker by now
 app
 |- user -> csv with user data
+    |- list.csv
 |- docs -> for md-files
     |- _includes: 
         |-nav.html
@@ -29,17 +30,19 @@ def restore_print():
   sys.stdout=sys.__stdout__
 
 if __name__=="__main__":
-  # print(f'TEST on {datetime.now().strftime("%Y%m%d-%H%M%S")}')
-  time = datetime.now().strftime("%Y%m%d-%H%M%S")
-  print_to_file('test.md')
-  print(f'last run: {time}\n')
-  restore_print()
-  update_nav(time)
-  for file in os.listdir("user"):
-      if file.endswith("csv"):
-          ff = f'user{os.sep}{file}'
-          with open(f'{ff}', 'r') as f:
-              a = f.readline()
-              while a:
-                  print(a)
-                  a = f.readline()
+    # print(f'TEST on {datetime.now().strftime("%Y%m%d-%H%M%S")}')
+    time = datetime.now().strftime("%Y%m%d-%H%M%S")
+
+    update_nav(time)
+    print_to_file('test.md')
+
+    for file in os.listdir("user"):
+        if file.endswith("csv"):
+            csv = f'user{os.sep}{file}'
+            print(f'file {csv} found! It contents:')
+            with open(f'{csv}', 'r') as f:
+                a = f.readline()
+                for i, line in enumerate(f, start=1):
+                    print(i, line)
+    print(f'last run: {time}\n')
+    restore_print()
