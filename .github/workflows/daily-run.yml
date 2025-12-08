@@ -20,7 +20,7 @@ jobs:
 
     - name: Build & run service
       run: |
-        docker compose -f docker/docker-compose.yml run --rm my-service
+        docker compose -f docker/docker-compose.yml run --rm cfp
 
     - name: Check for changes
       run: |
