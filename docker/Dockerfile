@@ -7,4 +7,3 @@ COPY ../python/test.py /app/test.py
 RUN chmod +x /app/test.py
 RUN mkdir docs
 CMD ["python3.11", "/app/test.py"]
-CMD ["bash"]

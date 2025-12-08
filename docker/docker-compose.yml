@@ -3,6 +3,6 @@ services:
     build:
       context: ..
       dockerfile: docker/Dockerfile
-     working_dir: /app
-     volumes:
-      - ../docs:/app/docs
+    working_dir: /app
+    volumes:
+       - ../docs:/app/docs
