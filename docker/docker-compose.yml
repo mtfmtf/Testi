@@ -3,5 +3,6 @@ services:
     build:
       context: ..
       dockerfile: docker/Dockerfile
-    volumes:
+     working_dir: /app
+     volumes:
       - ../docs:/app/cfp
