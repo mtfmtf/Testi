@@ -1,0 +1,45 @@
+name: Daily Runner
+
+on:
+  schedule:
+    - cron: "0 8 * * *"   # 08:00 UTC - anpassen falls andere Zeitzone
+  workflow_dispatch:      # erlaubt manuelles Starten
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0     # wichtig: sonst kann man nicht pushen
+
+    - name: Set up Docker Compose
+      run: sudo apt-get update && sudo apt-get install -y docker-compose
+
+    - name: Build & run service
+      run: |
+        docker compose -f docker/docker-compose.yml run --rm my-service
+
+    - name: Check for changes
+      run: |
+        if ! git diff --quiet; then
+          echo "Changes detected."
+        else
+          echo "No changes found."
+        fi
+
+    - name: Commit & push changes
+      if: success()
+      run: |
+        if ! git diff --quiet; then
+          git config --global user.name "GitHub Runner"
+          git config --global user.email "runner@github"
+          git add docs/test.md
+          git commit -m "Automated update of test.md"
+          git push
+        else
+          echo "Nothing to commit."
+        fi
+
