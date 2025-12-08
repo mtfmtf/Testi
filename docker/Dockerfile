@@ -6,4 +6,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY ../python/test.py /app/test.py
 RUN chmod +x /app/test.py
 RUN mkdir docs
-CMD ["python3.11", "/app/test.py"]
+RUN mkdir user
+COPY ../user /app/user/
+CMD ["bash"]

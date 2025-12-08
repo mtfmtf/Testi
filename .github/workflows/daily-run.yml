@@ -2,7 +2,7 @@ name: Daily Runner
 
 on:
   schedule:
-    - cron: "0 8 * * *"   # 08:00 UTC - anpassen falls andere Zeitzone
+    - cron: "0 2 * * *"   # 02:00 UTC - anpassen falls andere Zeitzone
   workflow_dispatch:      # erlaubt manuelles Starten
 
 jobs:
