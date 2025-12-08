@@ -7,7 +7,9 @@ file tree in docker by now
 app
 |- user -> csv with user data
 |- docs -> for md-files
-    |- _includes: nav.html
+    |- _includes: 
+        |-nav.html
+        |-update.html
 test.py
 
 '''

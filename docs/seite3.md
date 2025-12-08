@@ -26,4 +26,4 @@ Date:   Mon Jan 20 22:21:50 2025 +0100
 
 die entstandenen Änderungen sind durch die neue Klasse minimal, da in diese nur die nötige Struktur (sprich Implementierung der abstrakten Methode) hinzugefügt werden musste. Die meisten Zeilen wurden in die Test-Klasse hinzugefügt worden.
 
-[home](index.md)
+[home](home.md)
