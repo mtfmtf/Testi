@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 
 #DIRECTORY=f'..{os.sep}docs{os.sep}'
-DIRECTORY=f'cfp{os.sep}'
+DIRECTORY=f'docs{os.sep}'
 HEADER='---\n---\n{% include nav.html %}'
 
 def print_to_file(filename):

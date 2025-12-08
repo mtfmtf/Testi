@@ -5,4 +5,4 @@ services:
       dockerfile: docker/Dockerfile
      working_dir: /app
      volumes:
-      - ../docs:/app/cfp
+      - ../docs:/app/docs
