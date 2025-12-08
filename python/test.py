@@ -1,12 +1,13 @@
-import sys
-import os
+import sys, os
+from update_nav import *
 from datetime import datetime
 
 '''
 file tree in docker by now
 app
-|-user -> csv with user data
-|-docs -> for md-files
+|- user -> csv with user data
+|- docs -> for md-files
+    |- _includes: nav.html
 test.py
 
 '''
@@ -27,9 +28,11 @@ def restore_print():
 
 if __name__=="__main__":
   # print(f'TEST on {datetime.now().strftime("%Y%m%d-%H%M%S")}')
+  time = datetime.now().strftime("%Y%m%d-%H%M%S")
   print_to_file('test.md')
-  print(f'last run: {datetime.now().strftime("%Y%m%d-%H%M%S")}\n')
+  print(f'last run: {time}\n')
   restore_print()
+  update_nav(time)
   for file in os.listdir("user"):
       if file.endswith("csv"):
           ff = f'user{os.sep}{file}'

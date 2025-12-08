@@ -3,7 +3,7 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends \
   nano \
   && rm -rf /var/lib/apt/lists/*
-COPY ../python/test.py /app/test.py
+COPY ../python /app/
 RUN chmod +x /app/test.py
 RUN mkdir docs
 RUN mkdir user
