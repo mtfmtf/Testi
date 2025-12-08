@@ -8,4 +8,4 @@ RUN chmod +x /app/test.py
 RUN mkdir docs
 RUN mkdir user
 COPY ../user /app/user/
-CMD ["bash"]
+CMD ["python3", "test.py"]
