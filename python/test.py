@@ -18,7 +18,7 @@ def restore_print():
   sys.stdout=sys.__stdout__
 
 if __name__=="__main__":
-  print(f'TEST on datetime.now().strftime('%Y%m%d-%H%M%S'))
+  print(f'TEST on datetime.now().strftime("%Y%m%d-%H%M%S")')
   print_to_file('test.md')
   print(f'last run: {datetime.now().strftime("%Y%m%d-%H%M%S")}\n')
   
