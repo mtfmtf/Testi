@@ -12,4 +12,4 @@ leider noch keine PDF oder sonstiges
 <img src="cal-year.jpg" width="500">
 </div>
 
-[home](home.md)
+[home](home.html)
