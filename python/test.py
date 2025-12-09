@@ -20,7 +20,7 @@ HEADER='---\n---\n{% include nav.html %}'
 
 def print_to_file(filename):
   sys.stdout.flush()
-  modus = 'a' if os.path.exists(f'{DIRECTORY}{filename}') else 'wt'
+  modus = 'a' if os.path.exists(f'{DIRECTORY}{filename}') else 'w'
   print(f'Modus:{modus}')
   sys.stdout=open(f'{DIRECTORY}{filename}',f'{modus}')
   if modus != 'a' : print(f'{HEADER}')
