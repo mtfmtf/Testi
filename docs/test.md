@@ -69,4 +69,3 @@ file user/list.csv found! It contents:
 10 Conference of the European Association for the Study of Science and Technology (EASST), tps://easst.net/conference/easst2026/easst2026-home/ 
 
 last run: 20251209-031345
-

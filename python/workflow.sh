@@ -2,6 +2,6 @@
 
 python3 test.py 
 
-cat /app/docs/_include/update.html
+cat /app/docs/_includes/update.html
 
 

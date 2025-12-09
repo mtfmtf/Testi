@@ -8,4 +8,5 @@ RUN chmod +x /app/workflow.sh
 RUN mkdir docs
 RUN mkdir user
 COPY ../user /app/user/
+ENTRYPOINT ["./workflow.sh"]
 CMD ["bash"]
