@@ -31,14 +31,14 @@ jobs:
           echo "No changes found."
         fi
 
-    - name: Commit & push changes
+    - name: Commit & push changes   # git add -A, um alle Änderungen zu pushen!
       if: success()
       run: |
         if ! git diff --quiet; then
           git config --global user.name "GitHub Runner"
           git config --global user.email "runner@github"
-          git add docs/test.md
-          git commit -m "updating test.md after running automatically"
+          git add -A 
+          git commit -m "updating files after running automatically"
           git push
         else
           echo "Nothing to commit."

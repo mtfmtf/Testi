@@ -22,7 +22,7 @@ def print_to_file(filename):
   sys.stdout.flush()
   modus = 'a' if os.path.exists(f'{DIRECTORY}{filename}') else 'w'
   print(f'Modus:{modus}')
-  sys.stdout=open(f'{DIRECTORY}{filename}',f'{modus}')
+  sys.stdout=open(f'{DIRECTORY}{filename}',f'{modus}',newline='')
   if modus != 'a' : print(f'{HEADER}')
 
 def restore_print():
@@ -39,7 +39,7 @@ if __name__=="__main__":
     for file in os.listdir("user"):
         if file.endswith("csv"):
             csv = f'user{os.sep}{file}'
-            print(f'file {csv} found! It contents:')
+            print(f'\n## file {file[0:len(csv)-4]} found! It contents:\n')
             with open(f'{csv}', 'r') as f:
                 a = f.readline()
                 for i, line in enumerate(f, start=1):
