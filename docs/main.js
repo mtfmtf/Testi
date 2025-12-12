@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (logoutForm) {
         logoutForm.addEventListener('submit', function(e){
             e.preventDefault();
-            window.location.href = "start.html"; 
+            window.location.href = "index.html"; 
         });
     }
 

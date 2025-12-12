@@ -1,0 +1,77 @@
+
+
+<input type="file" id="csvInput" accept=".csv">
+
+<div style="display:flex; gap:20px; margin-top:20px;">
+    
+    <!-- Liste der Elemente -->
+    <ul id="list" class="box" style="width:200px;"></ul>
+    
+    <!-- Detailfeld -->
+    <div id="details" class="box" style="flex:1;">
+        <strong>Details erscheinen hier…</strong>
+    </div>
+
+</div>
+
+
+
+<script>
+document.getElementById("csvInput").addEventListener("change", function(e) {
+    const file = e.target.files[0];
+    const reader = new FileReader();
+
+    reader.onload = function() {
+        const lines = reader.result
+            .split("\n")
+            .map(l => l.trim())
+            .filter(l => l !== "");
+
+        // Erste Zeile enthält Spaltennamen (Name, URL)
+        const headers = lines[0].split(",");
+
+        // Datenzeilen
+        const data = lines.slice(1).map(line => {
+            const parts = line.split(",");
+            const obj = {};
+            headers.forEach((h, i) => obj[h] = parts[i]);
+            return obj;
+        });
+
+        const list = document.getElementById("list");
+        list.innerHTML = "";
+
+        for (const item of data) {
+            const li = document.createElement("li");
+            li.textContent = item.name; // Name wird in der Liste angezeigt
+            li.style.cursor = "pointer";
+
+            li.onclick = () => {
+                document.getElementById("details").innerHTML =
+                    `<h3>${item.name}</h3>
+                     <p><strong>ID:</strong> ${item.id}</p>
+                     <p><strong>Info:</strong> ${item.info}</p>`;
+            };
+
+            list.appendChild(li);
+        }
+    };
+
+    reader.readAsText(file);
+});
+</script>
+
+<style>
+  #list li:hover {
+    background-color: #f0f0f0;
+  }
+
+  .box {
+    margin:50px; 
+    border-radius: 8px;
+    border:1px solid #ffffff;
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.1); 
+    padding:10px;
+  }
+</style>
+
