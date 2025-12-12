@@ -1,9 +1,3 @@
----
----
-
-{% include nav.html %}
-
-
 
 die Größe des Delta nach dem Commiten anhand von
 
