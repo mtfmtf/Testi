@@ -1,0 +1,19 @@
+---
+---
+<nav style="margin-bottom: 20px;"> <a href="home.html">home</a></nav>
+Computer Supported Cooperative Work (CSCW), https://dl.acm.org/conference/cscw, https://cscw.acm.org/2025/ 
+
+Conference on Human Factors in Computing (CHI), https://dl.acm.org/conference/chi, https://chi2026.acm.org/ 
+
+Designing Interactive Systems (DIS), https://dl.acm.org/conference/dis, https://dis.acm.org/2026/ 
+
+International Conference on Information Systems (ICIS), https://icis2025.aisconferences.org/, https://aisel.aisnet.org/icis/
+
+Nordic Conference on Human-Computer Interaction (NordiCHI), https://sites.uwasa.fi/nordichi2026/ 
+
+Participatory Design Conference (PDC), https://www.pdc2026.polimi.it/ 
+
+Tangible and Embedded Interaction (TEI), https://dl.acm.org/conference/tei, https://tei.acm.org/2026/ 
+
+Weizenbaum Conference, https://www.weizenbaum-institut.de/en/transfer/mediating-and-networking/weizenbaum-conference/, https://www.weizenbaum-conference.de/ 
+

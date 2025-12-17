@@ -14,5 +14,7 @@ Experimentelle Webseite in **Markdown**.
 
 Externer Link -> [Wikipedia](https://de.wikipedia.org/wiki/Wikipedia:Hauptseite) 
 
+{%include_relative all.md%}
+
 
 {% include logout.html %}
