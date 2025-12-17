@@ -1,3 +1,3 @@
 ---
 ---
-{% include_relative gespeicherte.html%}
+{% include_relative pages/gespeicherte.html%}

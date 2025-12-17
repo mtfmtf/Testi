@@ -1,3 +1,3 @@
 ---
 ---
-{% include_relative allgemein.html%}
+{% include_relative pages/allgemein.html%}
