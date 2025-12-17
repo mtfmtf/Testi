@@ -1,4 +1,4 @@
-<!doctype html>
+
 <html lang="de">
 <head>
 <meta charset="utf-8">
@@ -16,19 +16,35 @@
   a.link { word-break:break-all; display:inline-block; margin-top:8px; }
 </style>
 </head>
+
+
 <body>
 
-<label>Datei auswählen (CSV): <input type="file" id="csvInput" accept=".csv,text/csv"></label>
-
-<div class="container" style="margin-top:16px;">
-  <ul id="list"><li style="color:#888;">Keine Datei geladen.</li></ul>
-  <div id="details">
-    <strong>Details erscheinen hier nach Klick auf einen Eintrag.</strong>
-  </div>
-</div>
 
 <script>
+document.addEventListener("DOMContentLoaded", () => {
+  loadCSV("csv/test-list2.csv");
+});
+
+function loadCSV(path) {
+  fetch(path)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("CSV konnte nicht geladen werden");
+      }
+      return response.text();
+    })
+    .then(text => {
+      parseCSV(text);
+    })
+    .catch(err => {
+      console.error(err);
+      document.getElementById("list").innerHTML =
+        "<li style='color:red'>Fehler beim Laden der CSV.</li>";
+    });
+}
 // --- Utility: robuster CSV-Parser (behandelt Anführungszeichen und Kommas in Feldern) ---
+
 function parseCSV(text) {
   const rows = [];
   let cur = '', row = [], inQuotes = false;
@@ -180,5 +196,12 @@ function escapeAttribute(s) { return escapeHtml(s).replace(/"/g,'&quot;'); }
 function nl2br(s) { return s.replace(/\n/g,'<br>'); }
 
 </script>
+
+<div class="container" style="margin-top:16px;">
+  <ul id="list"><li style="color:#888;">Keine Datei geladen.</li></ul>
+  <div id="details">
+    <strong>Details erscheinen hier nach Klick auf einen Eintrag.</strong>
+  </div>
+</div>
 </body>
 </html>

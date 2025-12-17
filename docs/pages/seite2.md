@@ -4,7 +4,7 @@
 leider noch keine PDF oder sonstiges
 
 <div style="text-align:center">
-<img src="cal-year.jpg" width="500">
+<img src="pages/cal-year.jpg" width="500">
 </div>
 
 

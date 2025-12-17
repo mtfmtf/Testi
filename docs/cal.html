@@ -1,0 +1,21 @@
+---
+layout: page
+title: Übersicht
+---
+
+{% include nav.html %}
+
+<h1>{{ page.title }}</h1>
+
+<ul>
+{% for e in site.data.calender %}
+  <li>
+    <strong>{{ e.date | date: "%d.%m.%Y" }}</strong> –
+    {{ e.title }}
+    {% if e.location %}
+      ({{ e.location }})
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>
+
