@@ -13,7 +13,8 @@ PAGES=f'{DIRECTORY}pages{os.sep}'
 
 
 def create_base_md(name, page):
-    with open(f'..{os.sep}{DIRECTORY}{name}.md', 'w', newline='\n') as md:
+    # with open(f'..{os.sep}{DIRECTORY}{name}.md', 'w', newline='\n') as md:
+    with open(f'{DIRECTORY}{name}.md', 'w', newline='\n') as md:
         md.write(HEADER)
         s = '{% include_relative pages/'
         s += f'{page}'
@@ -22,7 +23,8 @@ def create_base_md(name, page):
 
 def create_page_md(name, content: list):
     print(f'YOUR CONTENT IN ..{os.sep}{PAGES}{name}.md')
-    with open(f'..{os.sep}{PAGES}{name}.md', 'w', newline='\n') as md:
+    # with open(f'..{os.sep}{PAGES}{name}.md', 'w', newline='\n') as md:
+    with open(f'{PAGES}{name}.md', 'w', newline='\n') as md:
         md.write(f'{HEADER}')
         md.write('<nav style="margin-bottom: 20px;"> <a href="home.html">home</a></nav>\n')
         md.write(f'# <span style="color: #FF0000; font-weight: bold; margin-bottom: 10px">{name}s list </span>\n')
