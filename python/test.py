@@ -43,10 +43,12 @@ if __name__=="__main__":
     all = set()
     crop = set()
 
-    for file in sorted(os.listdir(f"..{os.sep}user")):
+    # for file in sorted(os.listdir(f"..{os.sep}user")):
+    for file in sorted(os.listdir(f"user")):
         if file.endswith("csv"):
             tabs.append(f'{file[0:len(file)-4]}')
-            csv = f'..{os.sep}user{os.sep}{file}'
+            # csv = f'..{os.sep}user{os.sep}{file}'
+            csv = f'user{os.sep}{file}'
             print(f'\n## file {file[0:len(csv)-4]} found! It contents:\n')
             with (open(f'{csv}', 'r') as f):
                 a = f.readline()
