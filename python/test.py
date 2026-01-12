@@ -28,7 +28,7 @@ def print_to_file(filename):
   modus = 'w'
   # modus = 'a' if os.path.exists(f'{DIRECTORY}{filename}') else 'w'
   print(f'Modus:{modus}')
-  sys.stdout=open(f'..{os.sep}{DIRECTORY}{filename}',f'{modus}',newline='\n')
+  sys.stdout=open(f'{DIRECTORY}{filename}',f'{modus}',newline='\n')
   print(f'{HEADER_NAV}\n')
 
 def restore_print():

@@ -7,8 +7,8 @@ HEADER_NAV = HEADER + '{% include nav.html %}'
 
 DIRECTORY = f'docs{os.sep}'
 INCLUDE = DIRECTORY + f'_includes{os.sep}'
-NAV=f'..{os.sep}{INCLUDE}nav.html'
-UPDATE=f'..{os.sep}{INCLUDE}update.html'
+NAV=f'{INCLUDE}nav.html'
+UPDATE=f'{INCLUDE}update.html'
 PAGES=f'{DIRECTORY}pages{os.sep}'
 
 
@@ -22,7 +22,7 @@ def create_base_md(name, page):
         md.write(f'{s}')
 
 def create_page_md(name, content: list):
-    print(f'YOUR CONTENT IN ..{os.sep}{PAGES}{name}.md')
+    print(f'YOUR CONTENT IN {PAGES}{name}.md')
     # with open(f'..{os.sep}{PAGES}{name}.md', 'w', newline='\n') as md:
     with open(f'{PAGES}{name}.md', 'w', newline='\n') as md:
         md.write(f'{HEADER}')
